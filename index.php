@@ -3,7 +3,8 @@
 Plugin Name: WordPress GPT Executive Summarizer using OpenAI
 Description: Assemble all published posts into a single text file, send to ChatGPT for summary, and update a WP configuration.
 Version: 1.0
-Author: Your Name
+Author: Mayur Jobanputra
+Author URI: https://mayur.ca 
 */
 
 // Hook for adding admin menus
@@ -11,7 +12,7 @@ add_action('admin_menu', 'gpt_executive_summary_menu');
 
 // Action function for above hook
 function gpt_executive_summary_menu() {
-    add_options_page('GPT Executive Summary Settings', 'GPT Executive Summary', 'manage_options', 'gpt-executive-summary', 'gpt_executive_summary_settings_page');
+    add_options_page('GPT Summarizer', 'GPT Summarizer', 'manage_options', 'gpt-summarizer', 'gpt_executive_summary_settings_page');
 }
 
 // GPT Executive Summary Settings Page
